@@ -1,4 +1,4 @@
-package designMode.Singleton;
+package com.col.Singleton;
 
 import java.util.concurrent.atomic.AtomicReference;
 

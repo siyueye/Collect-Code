@@ -1,4 +1,4 @@
-package designMode.Singleton;
+package com.col.Singleton;
 
 /**
  * 枚举（线程安全）

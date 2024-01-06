@@ -1,4 +1,4 @@
-package designMode.Singleton;
+package com.col.Singleton;
 
 /**
  * ThreadLocal实现单例模式

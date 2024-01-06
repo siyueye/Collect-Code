@@ -1,4 +1,4 @@
-package designMode.Singleton;
+package com.col.Singleton;
 
 /**
  * 双重同步锁
