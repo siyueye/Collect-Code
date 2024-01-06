@@ -1,4 +1,4 @@
-package com.col.Singleton;
+package com.col.designMode.Singleton;
 /**
  * 单例模式--懒汉模式
  */

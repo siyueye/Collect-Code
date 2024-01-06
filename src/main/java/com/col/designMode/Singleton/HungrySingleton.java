@@ -1,4 +1,4 @@
-package com.col.Singleton;
+package com.col.designMode.Singleton;
 
 /**
  * 饿汉模式  线程安全的

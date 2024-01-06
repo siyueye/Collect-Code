@@ -1,4 +1,4 @@
-package com.col.Singleton;
+package com.col.designMode.Singleton;
 
 /**
  * 静态类内部加载（线程安全）
