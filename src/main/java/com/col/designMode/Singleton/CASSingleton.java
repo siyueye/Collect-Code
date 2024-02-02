@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * 更加优美的Singleton, 线程安全的,使用CAS锁实现
  */
 public class CASSingleton {
+
     /** 利用AtomicReference */
     private static final AtomicReference<CASSingleton> INSTANCE = new AtomicReference<CASSingleton>();
     /**
