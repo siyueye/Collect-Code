@@ -7,6 +7,7 @@ import com.java8.feature.lambda.strategyPattern.FilterEmployeeExe;
 import com.java8.feature.lambda.strategyPattern.abs.MyPredicate;
 import org.junit.jupiter.api.Test;
 
+import java.util.Collections;
 import java.util.List;
 
 public class FilterEmployeeTest {
@@ -80,4 +81,26 @@ public class FilterEmployeeTest {
         flt.getEmployees().stream().filter((e) -> e.getSalary() >=
                 5000).map(Employee::getName).forEach(System.out::println);
     }
+    @Test
+    public void test9(){
+        Collections.sort( flt.getEmployees(), (e1, e2) -> {
+            if(e1.getAge() == e2.getAge()){
+                return e1.getName().compareTo(e2.getName());
+            }
+            return Integer.compare(e1.getAge(), e2.getAge());
+        });
+        flt.getEmployees().stream().forEach(System.out::println);
+    }
+
+@Test
+public void test10(){
+    Collections.sort(flt.getEmployees(), (e1, e2) -> {
+        if(e1.getAge() == e2.getAge()){
+            return e1.getName().compareTo(e2.getName());
+        }
+            return -Integer.compare(e1.getAge(), e2.getAge());
+        });
+        flt.getEmployees().stream().forEach(System.out::println);
+    }
+
 }
